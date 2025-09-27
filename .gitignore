@@ -1,0 +1,55 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtualenvs
+.venv/
+venv/
+ENV/
+env/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# --- Rust / PyO3 / maturin ---
+/target/
+**/*.rs.bk
+# (maturin wheels live under target/wheels)
+
+# --- Docker ---
+docker-compose.override.yml
+.docker/
+docker/*.local.*
+
+# --- Editor ---
+.vscode/
+
+# --- Logs & temp ---
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+*.temp
+
+# --- yt-dlp / ffmpeg temp files ---
+*.part
+*.ytdl
+*.aria2
+*.webm.download
+*.mp4.download
+*.crdownload
