@@ -1,10 +1,11 @@
 from __future__ import annotations
-from typing import Optional, NoReturn, cast
+
+from typing import NoReturn, Optional, cast
 
 import asyncpg
+from cassandra import cluster as scy_cluster
 from redis.asyncio import Redis
 from starlette.concurrency import run_in_threadpool
-from cassandra import cluster as scy_cluster
 
 from app.settings import settings
 

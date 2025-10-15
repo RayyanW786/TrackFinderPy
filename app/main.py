@@ -1,17 +1,18 @@
-from starlette.applications import Starlette
-from starlette.routing import Route
-from starlette.responses import JSONResponse
-from contextlib import asynccontextmanager
 import asyncio
-from typing import Dict, Any
+from contextlib import asynccontextmanager
+from typing import Any, Dict
+
+from starlette.applications import Starlette
+from starlette.responses import JSONResponse
+from starlette.routing import Route
 
 from app.deps import (
-    init_pg,
     close_pg,
-    init_redis,
     close_redis,
-    init_scylla,
     close_scylla,
+    init_pg,
+    init_redis,
+    init_scylla,
     ping_pg,
     ping_redis,
     ping_scylla,
