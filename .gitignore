@@ -26,9 +26,10 @@ env/
 !.env.example
 
 # --- Rust / PyO3 / maturin ---
-/target/
+**/target/
 **/*.rs.bk
 # (maturin wheels live under target/wheels)
+**/*.whl
 
 # --- Docker ---
 docker-compose.override.yml

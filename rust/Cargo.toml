@@ -1,0 +1,4 @@
+[workspace]
+
+members = ["trackfinder-core","trackfinder-py"]
+resolver = "2"

@@ -1,0 +1,13 @@
+[package]
+name = "trackfinder-py"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "trackfinder_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.26", features = ["extension-module"] }
+numpy = "0.26"
+trackfinder-core = { path = "../trackfinder-core" }

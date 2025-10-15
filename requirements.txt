@@ -1,0 +1,13 @@
+starlette
+uvicorn[standard]
+pydantic
+pydantic-settings
+
+redis
+asyncpg
+scylla-driver
+
+python-multipart
+orjson
+argon2-cffi
+ruff
